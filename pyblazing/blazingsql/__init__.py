@@ -17,6 +17,21 @@ __os_release__ = getProductDetailsCaller()["OS_RELEASE"]
 
 
 def __info__():
+    """
+    Find out about the version and build of BlazingSQL you are running.
+
+    Examples
+    --------
+    
+    >>> import blazingsql
+    >>> blazingsql.__info__()
+    BlazingSQL version (git hash): c8bae3864db45d62942ee82beef3f08bc0b8aab8
+    BlazingSQL branch name: branch-0.14
+    BlazingSQL branch tag: v0.14
+    ...
+
+    Docs: https://docs.blazingdb.com/docs/blazingsql-version-info
+    """
     print("BlazingSQL version (git hash): %s" % __version__)
     print("BlazingSQL branch name: %s" % __branch_name__)
     print("BlazingSQL branch tag: %s" % __branch_tag__)
